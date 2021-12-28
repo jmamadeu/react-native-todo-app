@@ -8,7 +8,6 @@ export function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
   function handleAddTask(newTaskTitle: string) {
-    console.log(newTaskTitle, "test");
     setTasks((current) => [
       ...current,
       { id: current.length + 1, done: false, title: newTaskTitle },
